@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submit Data</title>
+</head>
+<body>
+    <h1>Submit Data</h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
